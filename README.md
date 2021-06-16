@@ -1,4 +1,4 @@
-# Zoom-Party-2021
+# Zoom Party (June 2021)
 Score processing and visualization from my post-proposal defense Zoom party in June 2021
 
 ![Plot of final scores](https://github.com/meshachpierre/Zoom-Party-2021/blob/main/plots/scores.jpeg)
