@@ -82,11 +82,12 @@ values <- scales::viridis_pal(option = "D")(6)
   scale_y_continuous(name = "Score"))
 
 # Final plot: inset plot with running scores
-(p2 + annotation_custom(grob=ggplotGrob(p1),
+(scores_plot <- p2 + annotation_custom(grob=ggplotGrob(p1),
                        ymin = 150, ymax=400, xmin=1, xmax=25) +
-  ggtitle(label = "Scores from post-defense Zoom party",
+  ggtitle(label = "Scores from post-defense Zoom party (June 2021)",
           subtitle = "Final scores inset"))
 
+ggsave("plots/scores.jpeg", scores_plot)
 
 # Word cloud --------------------------------------------------------------
 # Generate frequency data from categories
