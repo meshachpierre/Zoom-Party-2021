@@ -3,13 +3,11 @@
 # Author: Meshach A. Pierre
 # Date: 16-June-2021
 
-
 # Load packages -----------------------------------------------------------
 library(plyr)
 library(tidyverse)
 library(ghibli)
 library(wordcloud)
-
 
 # Data processing ---------------------------------------------------------
 # Read data
@@ -49,7 +47,6 @@ party_totals <- party_data_long %>%
 # Remove Guyana from totals
 party_totals_nogy <- party_totals %>% 
   filter(name != "guyana")
-
 
 # Plot scores -------------------------------------------------------------
 # Extract viridis palette hex codes
